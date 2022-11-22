@@ -219,14 +219,10 @@ def corrige_municipios(valor):
 
 import numpy as np
 
-os.chdir("C:\\Users\\lucia\\Tese_Marilia")
-
 
 def executa_df():
     
-    os.chdir("C:\\Users\\lucia\\Tese_Marilia")
-    length = len('C:\\Users\\lucia\\Tese_Marilia' + '\\Data\\')
-    path = 'C:\\Users\\lucia\\Tese_Marilia' + '\\Data\\*.csv'
+    path = os.getcwd() + '\\Data\\*.csv'
 
     lista_arquivos = glob.glob(path)
     df = unifica_dados(lista_arquivos, colunas_arquivos_maisAtuais, colunas_utilizadas)

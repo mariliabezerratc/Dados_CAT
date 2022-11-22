@@ -8,8 +8,6 @@ def exec():
 
     import os
 
-    os.chdir("C:\\Users\\lucia\\Tese_Marilia")
-
     cbo = pd.read_csv('ArquivosTratados\\cbo.csv', encoding='latin-1', sep=',')
     cbo = cbo.loc[:, ['CBO', 'Unnamed: 5']]
     cbo.dropna(axis=0, how='any', inplace=True)
