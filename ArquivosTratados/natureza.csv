@@ -1,0 +1,458 @@
+,Indice,Natureza,Agente
+142,142,Absorcao de Substanc,Q
+417,417,Absorcao de Substancia Caustica,Q
+95,95,Acido,Q
+60,60,Aerodispersoides,Q
+171,171,Aeronave,M
+245,245,Agente do Acidente I,
+377,377,Agente do Acidente Inexistente,
+246,246,"Agente do Acidente,",
+387,387,"Agente do Acidente, Nic",
+11,11,Agente Infeccioso ou,B
+391,391,Agente Infeccioso ou Parasitario - Inclui Bac,B
+86,86,Agua - Usar Quando O,
+372,372,Agua - Usar Quando O Estado Iiquido Contribui,
+26,26,"Alavanca, Pe-De-Cabr",M
+275,275,"Alavanca, Pe-De-Cabra- Ferramenta Manual Sem",M
+117,117,Alcali,Q
+179,179,Alcool,Q
+106,106,"Alicate, Torques, Te",M
+319,319,"Alicate, Torques, Tenaz- Ferramenta Manual Se",M
+3,3,"Andaime, Plataforma",M
+288,288,"Andaime, Plataforma - Edificio ou Estrutura",M
+44,44,Animal Vivo,B
+228,228,"Aprision. Em, Sob ou",M
+297,297,"Aprision. Em, Sob ou Entre, Nic",M
+163,163,"Aprision. Em, Sobre",M
+370,370,"Aprision. Em, Sobre ou Entre Desabamento",M
+407,407,"Aprision. Em, Sobre ou Entre Dois ou Mai",M
+380,380,"Aprision. Em, Sobre ou Entre Objeto Para",M
+363,363,"Aprision. Em, Sobre ou Entre Objetos Em",M
+84,84,Arco Eletrico,M
+110,110,Arco Eletrico - Equi,M
+421,421,Arco Eletrico - Equip. Emissor de Radiac,M
+137,137,Area ou Ambiente de,M
+267,267,Area ou Ambiente de Trabalho - O Agente do Ac,M
+174,174,"Arquibancada, Estadi",M
+75,75,"Arquivo, Fichario, E",E
+396,396,"Arquivo, Fichario, Estante - Mobiliario e Ace",E
+71,71,"Asfalto, Alcatrao, P",Q
+341,341,"Asfalto, Alcatrao, Piche",Q
+234,234,Ataque de Ser Vivo c,B
+405,405,Ataque de Ser Vivo com Peconha,B
+425,425,Ataque de Ser Vivo com Transmissao de Doenca,B
+221,221,Ataque de Ser Vivo p,B
+361,361,"Ataque de Ser Vivo por Mordedura, Picada, Chi",B
+178,178,"Ataque de Ser Vivo,",B
+289,289,"Ataque de Ser Vivo, Nic",B
+116,116,Atrito ou Abrasao po,M
+307,307,Atrito ou Abrasao por Compressao Repetitiva,M
+355,355,Atrito ou Abrasao por Corpo Estranho no Olho,M
+286,286,"Atrito ou Abrasao por Encostar, Pisar, Ajoelh",M
+304,304,Atrito ou Abrasao por Manusear Objeto,M
+409,409,Atrito ou Abrasao por Objeto em Vibracao,M
+184,184,"Atrito ou Abrasao, N",M
+326,326,"Atrito ou Abrasao, Nic",M
+31,31,"Balcao, Bancada - Mo",
+373,373,"Balcao, Bancada - Mobiliario e Acessorios",
+55,55,"Barril, Barrica, Bar",M
+281,281,"Barril, Barrica, Barrilete, Tambor - Embalage",M
+39,39,Bicicleta,M
+127,127,Bomba,M
+154,154,"Britador, Moinho - M",M
+334,334,"Britador, Moinho - Maquina",M
+70,70,Cadeira Banco - Mobi,
+306,306,Cadeira Banco - Mobiliario e Acessorios,
+72,72,"Cais, Doca - Edifici",M
+442,442,"Cais, Doca - Edificio ou Estrutura",M
+53,53,"Caixa, Engradado, Ca",M
+296,296,"Caixa, Engradado, Caixote - Embalagem, Recipi",M
+160,160,Caixao Pneumatico -,M
+7,7,Calcada ou Caminho p,M
+315,315,Calcada ou Caminho para Pedestre - Superficie,M
+62,62,Caldeira,
+66,66,"Caldeira, Vaso Sob P",
+413,413,"Caldeira, Vaso Sob Pressao, Nic",
+51,51,"Canal, Fosso",
+217,217,Carne e Derivados -,B
+416,416,Carne e Derivados - Inclusive de Origem Anima,B
+89,89,Carro de Mao,M
+222,222,Carvao,Q
+46,46,Ceramica,M
+140,140,"Ceramica, Nic",M
+244,244,Cereal e Derivados,B
+1,1,Chao - Superficie Ut,M
+266,266,Chao - Superficie Utilizada para Sustentar Pe,M
+38,38,Chave de Parafuso- F,M
+424,424,Chave de Parafuso- Ferramenta Manual sem Forc,M
+141,141,Chave de Porca ou de,M
+327,327,"Chave de Porca ou de Abertura Regulavel, Chav",M
+211,211,Cianeto ou Composto,Q
+239,239,Composto Aromatico (,Q
+88,88,Composto Metalico (D,Q
+397,397,"Composto Metalico (De Chumbo, Mercurio, Zinco",Q
+242,242,Composto Organico Ha,B
+82,82,Condutor - Equip. El,M
+347,347,Condutor - Equip. Eletrico,M
+161,161,Coque,Q
+18,18,"Corda, Cabo, Corrent",M
+357,357,"Corda, Cabo, Corrente- Ferramenta Manual Sem",M
+159,159,Correia - Dispositiv,M
+386,386,Correia - Dispositivo de Transmissao de Energ,M
+85,85,"Corrente, Corda, Cab",M
+282,282,"Corrente, Corda, Cabo - Dispositivo de Transm",M
+34,34,"Cortadeira, Guilhoti",M
+345,345,"Cortadeira, Guilhotina- Ferramenta Portatil C",M
+189,189,Deposito Fixo (Tanqu,M
+445,445,"Deposito Fixo (Tanque, Silo, Paiol, Etc.) - E",M
+16,16,"Dique, Barragem - Ed",M
+170,170,Dispositivo de Trans,M
+331,331,Dispositivo de Transmissao de Energia Mecanic,M
+45,45,Edificio - Edificio,M
+349,349,Edificio - Edificio ou Estrutura,M
+107,107,Edificio ou Estrutur,M
+344,344,"Edificio ou Estrutura (Exceto Piso, Superfici",M
+227,227,"Eletrica, Exposicao",M
+400,400,"Eletrica, Exposicao a Energia",M
+112,112,Elevador - Equip. de,M
+398,398,Elevador - Equip. de Guindar,M
+153,153,Elevador de Cacamba,M
+455,455,Elevador de Cacamba para Mineracao - Equipame,M
+68,68,Embalagem e Recipien,M
+313,313,"Embalagem e Recipiente, Vazio ou Cheio, Nic",M
+203,203,Embreagem de Friccao,M
+436,436,Embreagem de Friccao - Dispositivo de Transmi,M
+80,80,Empilhadeira,M
+65,65,Energia,M
+56,56,Engrenagem - Disposi,M
+402,402,Engrenagem - Dispositivo de Transmissao de En,M
+129,129,"Enxada, Enxadao, Sac",M
+423,423,"Enxada, Enxadao, Sacho- Ferramenta Manual Sem",M
+182,182,Equip. de Aqueciment,M
+358,358,Equip. de Aquecimento Eletrico - Equipam,M
+36,36,"Equip. de Guindar, N",M
+302,302,"Equip. de Guindar, Nic",M
+152,152,Equip. de Iluminacao,M
+356,356,Equip. de Raios X - Equip. ou Subst,M
+25,25,"Equip. Eletrico, Nic",M
+172,172,Equip. Eletrolitico,M
+279,279,Equip. Eletrolitico - Equip. Eletri,M
+231,231,Equip. Emissor de Ra,
+168,168,Equip. Magnetico - E,M
+420,420,Equip. Magnetico - Equip. Eletrico,M
+256,256,Equip. ou Substancia,
+444,444,Equip. ou Substancia Emissores de Radiac,
+162,162,Equip. para Trabalho,
+449,449,Equip. para Trabalho em Ambiente de Pres,
+14,14,Escada Movel ou Fixa,M
+283,283,"Escada Movel ou Fixada, Nic",M
+50,50,Escada Permanente Cu,M
+258,258,Escada Permanente Cujos Degraus Permitem Apoi,M
+115,115,Escavacao (Para Edif,M
+346,346,"Escavacao (Para Edificio, Estrada, Etc.)",M
+8,8,"Escavacao, Fosso, Tu",M
+348,348,"Escavacao, Fosso, Tunel, Nic",M
+111,111,Esforco Excessivo ao,E
+329,329,Esforco Excessivo ao Empurrar ou Puxar Objeto,E
+359,359,Esforco Excessivo ao Erguer Objeto,E
+383,383,"Esforco Excessivo ao Manejar, Sacudir ou Arre",E
+87,87,"Esforco Excessivo, N",E
+404,404,"Esforco Excessivo, Nic",E
+63,63,Esmeril- Ferramenta,M
+411,411,Esmeril- Ferramenta Portatil com Forca Motriz,M
+177,177,Exposicao a Pressao,F
+43,43,"Faca, Facao- Ferrame",M
+257,257,"Faca, Facao- Ferramenta Manual sem Forca Motr",M
+150,150,Ferramenta Acionada,M
+388,388,Ferramenta Acionada por Explosivo- Ferramenta,M
+78,78,Ferramenta de Soldag,M
+369,369,Ferramenta de Soldagem- Ferramenta Portatil C,M
+21,21,Ferramenta Manual se,M
+263,263,"Ferramenta Manual sem Forca Motriz, Nic",M
+74,74,Ferramenta Portatil,M
+290,290,Ferramenta Portatil com Forca Motriz ou Aquec,M
+22,22,"Ferramenta, Maquina,",M
+276,276,"Ferramenta, Maquina, Equip., Veiculo, Ni",M
+164,164,Ferro de Passar- Fer,M
+392,392,Ferro de Passar- Ferramenta Portatil com Forc,M
+109,109,"Fogo-Chama,Material",M
+390,390,"Fogo-Chama,Material Incandescente ou Quente,F",M
+200,200,"Formao, Cinzel- Ferr",M
+419,419,"Formao, Cinzel- Ferramenta Manual sem Forca M",M
+121,121,"Forno, Estufa, Retor",M
+318,318,"Forno, Estufa, Retorta, Aquecedor de Ambiente",M
+99,99,"Frasco, Garrafa - Em",M
+378,378,"Frasco, Garrafa - Embalagem, Recipiente, Vazi",M
+237,237,Fruta e Derivados,B
+125,125,"Furadeira, Broqueade",M
+328,328,"Furadeira, Broqueadeira, Torno, Freza - Maqui",M
+132,132,"Garfo, Ancinho, Forc",M
+435,435,"Garfo, Ancinho, Forcado- Ferramenta Manual Se",M
+230,230,Gas Carbonico (Dioxi,Q
+59,59,Gas e Vapor,Q
+143,143,"Gasoleo, Oleo Diesel",Q
+147,147,Gasolina (Exceto Qua,Q
+379,379,Gasolina (Exceto Quando a Ocorrencia For Caus,Q
+194,194,Gerador - Equip. Ele,M
+264,264,Gerador - Equip. Eletrico,M
+191,191,Guincho Eletrico - E,M
+395,395,Guincho Eletrico - Equip. de Guindar,M
+48,48,Guincho Pneumatico -,M
+439,439,Guincho Pneumatico - Equip. de Guindar,M
+122,122,Guindaste - Equip. d,M
+403,403,Guindaste - Equip. de Guindar,M
+250,250,Hidrocarboneto Gasos,Q
+249,249,Imersao,
+166,166,Impacto de Pes. Cont,M
+303,303,Impacto de Pes. Contra Objeto em Movimento,M
+305,305,Impacto de Pes. Contra Objeto Parado,M
+165,165,Impacto Sofrido por,M
+285,285,Impacto Sofrido por Pes. de Objeto Projetad,M
+287,287,Impacto Sofrido por Pes. de Objeto Que Cai,M
+259,259,"Impacto Sofrido por Pes., Nic",M
+255,255,Inalacao de Substanc,Q
+219,219,"Inalacao, Ingestao o",Q
+431,431,"Inalacao, Ingestao ou Absorcao, Nic",Q
+232,232,Ingestao de Substanc,Q
+197,197,Jato de Areia- Ferra,M
+126,126,"Laminadora, Calandra",M
+393,393,"Laminadora, Calandra - Maquina",M
+224,224,"Legume, Verdura e De",B
+453,453,Leite e Derivados - Inclusive de Origem Anima,B
+204,204,"Lima, Grosa- Ferrame",M
+92,92,"Liquido, Nic",
+33,33,Louca de Mesa e Outr,M
+186,186,Louca Sanitaria (Pia,M
+452,452,"Louca Sanitaria (Pia, Vaso Sanitario, Etc.) -",M
+94,94,"Luminaria, Globo, Ia",E
+375,375,"Luminaria, Globo, Iampada - Mobiliario e Aces",E
+98,98,"Macaco (Mecanico, Hi",M
+410,410,"Macaco (Mecanico, Hidraulico, Pneumatico) - E",M
+205,205,"Machadinha, Enxo- Fe",M
+123,123,Machado- Ferramenta,M
+438,438,Machado- Ferramenta Manual sem Forca Motriz,M
+29,29,"Madeira (Toro, Madei",M
+284,284,"Madeira (Toro, Madeira Serrada, Pranchao, Pos",M
+134,134,Maquina Agricola,M
+24,24,Maquina de Aparafusa,M
+332,332,Maquina de Aparafusar - Ferramenta Portatil C,M
+187,187,Maquina de Embalar o,M
+434,434,Maquina de Embalar ou Empacotar,M
+229,229,Maquina de Escritori,M
+447,447,Maquina de Escritorio,M
+192,192,"Maquina de Fundir, d",M
+389,389,"Maquina de Fundir, de Forjar, de Soldar",M
+201,201,Maquina de Imprimir,M
+97,97,Maquina de Mineracao,M
+324,324,"Maquina de Mineracao e Perfuracao (De Tunel,",M
+35,35,Maquina de Terraplen,M
+292,292,Maquina de Terraplenagem e Construcao de Estr,M
+198,198,Maquina Textil,M
+47,47,"Maquina, Nic",M
+73,73,"Martelete, Socador-",M
+351,351,"Martelete, Socador- Ferramenta Portatil com F",M
+23,23,"Martelo, Malho, Marr",M
+278,278,"Martelo, Malho, Marreta- Ferramenta Manual Se",M
+105,105,Masarico - Ferrament,M
+342,342,Masarico - Ferramenta Portatil com Forca Motr,M
+225,225,Medicamento em Geral,Q
+180,180,Mesa Elastica Desmon,
+448,448,Mesa Elastica Desmontavel - Mobiliario e Aces,
+144,144,"Mesa, Carteira, Exce",
+408,408,"Mesa, Carteira, Exceto Mesa Elastica Desmonta",
+10,10,Metal - Inclui Liga,Q
+262,262,"Metal - Inclui Liga Ferrosa e nao Ferrosa, Tu",Q
+42,42,"Misturador, Batedeir",M
+338,338,"Misturador, Batedeira, Agitador - Maquina",M
+103,103,Mobiliario e Acessor,E
+268,268,"Mobiliario e Acessorios, Nic",E
+247,247,Monoxido de Carbono,Q
+446,446,Monoxido de Carbono (Co),Q
+27,27,"Motocicleta, Motonet",M
+265,265,"Motocicleta, Motoneta",M
+193,193,Motor (Combustao Int,
+335,335,"Motor (Combustao Interna, Vapor)",
+113,113,Motor Eletrico - Equ,M
+316,316,Motor Eletrico - Equip. Eletrico,M
+77,77,"Motor, Bomba, Turbin",M
+322,322,"Motor, Bomba, Turbina, Nic",M
+212,212,Nafta e Solvente de,Q
+384,384,"Nafta e Solvente de Nafta (Eter de Petroleo,",Q
+451,451,Neblina,Q
+138,138,Oleo Combustivel,Q
+252,252,Osso - Produto Anima,B
+235,235,Oxidos de Nitrogenio,Q
+157,157,"Pa Mecanica, Draga -",M
+352,352,"Pa Mecanica, Draga - Equip. de Guindar",M
+69,69,"Pa, Cavadeira- Ferra",M
+415,415,"Pa, Cavadeira- Ferramenta Manual sem Forca Mo",M
+136,136,"Painel de Controle,",M
+362,362,"Painel de Controle, Barramento, Chave, Interr",M
+253,253,Papel e Pasta para P,
+119,119,"Parafina, Oleo Lubri",Q
+440,440,"Parafina, Oleo Lubrificante e de Corte, Graxa",Q
+17,17,Particulas - nao Ide,Q
+310,310,Particulas - nao Identificadas,Q
+130,130,Passarela ou Platafo,M
+401,401,Passarela ou Plataforma Permanentes - Superfi,M
+199,199,Pau de Carga - Equip,M
+394,394,Pau de Carga - Equip. de Guindar,M
+226,226,"Pele, Crina, Pelo, L",B
+190,190,"Peneira Mecanica, Ma",M
+321,321,"Peneira Mecanica, Maquina Separadora - Maquin",M
+91,91,Perfuratriz- Ferrame,M
+330,330,Perfuratriz- Ferramenta Portatil com Forca Mo,M
+240,240,"Petroleo Bruto, Brut",Q
+79,79,Picareta- Ferramenta,M
+374,374,Picareta- Ferramenta Manual sem Forca Motriz,M
+49,49,Piso de Andaime e Pl,M
+314,314,Piso de Andaime e Plataforma Desmontavel - Su,M
+4,4,Piso de Edificio - S,M
+368,368,Piso de Edificio - Superficie Utilizada Para,M
+207,207,Piso de Mina - Super,M
+406,406,Piso de Mina - Superficie Utilizada para Sust,M
+54,54,Piso de Veiculo - Su,M
+437,437,Piso de Veiculo - Superficie Utilizada para S,M
+195,195,Plaina- Ferramenta M,M
+118,118,"Plaina, Tupia - Maqu",M
+367,367,"Plaina, Tupia - Maquina",M
+120,120,Plastico - Inclui Po,
+308,308,"Plastico - Inclui Po, Folha, Trefilado, Barra",
+76,76,"Poco, Entrada, Galer",M
+428,428,"Poco, Entrada, Galeria, Etc., de Mina",M
+208,208,"Politriz, Enceradeir",M
+443,443,"Politriz, Enceradeira- Ferramenta Portatil Co",M
+104,104,"Politriz, Lixadora,",M
+317,317,"Politriz, Lixadora, Esmeril - Maquina",M
+248,248,"Poluicao da Agua, Ac",Q
+156,156,"Poluicao do Ar, Acao",Q
+454,454,"Poluicao do Ar, Acao Da",Q
+206,206,Ponte Rolante - Equi,M
+432,432,Ponte Rolante - Equip. de Guindar,M
+149,149,"Ponte, Viaduto - Edi",M
+52,52,Prensa - Maquina,M
+185,185,Pressao Ambiente Alt,F
+223,223,Pressao Ambiente Bai,F
+196,196,Produto Alimenticio,B
+450,450,Produto Alimenticio - Inclusive de Origem Ani,B
+213,213,"Produto Animal, Nic",B
+96,96,Produto Biologico (S,B
+385,385,"Produto Biologico (Soro, Toxina, Antitoxina,",B
+158,158,"Produto de Limpeza,",Q
+350,350,"Produto de Limpeza, Sabao, Detergente",Q
+145,145,Produto de Petroleo,Q
+429,429,"Produto de Petroleo e de Carvao, Nic",Q
+176,176,Produto Mineral Meta,Q
+433,433,Produto Mineral Metalico - Produto de Minerac,Q
+12,12,Produto Mineral nao,Q
+325,325,Produto Mineral nao Metalico - Produto de Min,Q
+135,135,Produtos Alimenticio,B
+220,220,"Pua, Trado, Verruma,",M
+155,155,"Puncao, Ponteiro, Va",M
+426,426,"Puncao, Ponteiro, Vazador- Ferramenta Portati",M
+430,430,"Puncao, Ponteiro, Vazador, Talhadeira- Ferram",M
+214,214,Queda de Pes. com Di,M
+295,295,Queda de Pes. com Dif. de Nivel de And,M
+339,339,Queda de Pes. com Dif. de Nivel de Esc,M
+376,376,Queda de Pes. com Dif. de Nivel de Mat,M
+301,301,Queda de Pes. com Dif. de Nivel de Vei,M
+293,293,Queda de Pes. com Dif. de Nivel em Esc,M
+365,365,Queda de Pes. com Dif. de Nivel em Poc,M
+274,274,"Queda de Pes. com Dif. de Nivel, Nic",M
+210,210,Queda de Pes. em Mes,M
+309,309,Queda de Pes. em Mesmo Nivel em Passagem Ou,M
+277,277,Queda de Pes. em Mesmo Nivel Sobre ou Contr,M
+269,269,"Queda de Pes. em Mesmo Nivel, Nic",M
+215,215,Querosene,Q
+251,251,"Radiacao Ionizante,",F
+254,254,Radiacao nao Ionizan,F
+412,412,"Radiacao nao Ionizante, Exposicao A",F
+102,102,Rampa - Superficie U,M
+353,353,Rampa - Superficie Utilizada para Sustentar P,M
+108,108,Reacao do Corpo a Mo,
+320,320,Reacao do Corpo a Movimento Involuntario,
+272,272,Reacao do Corpo a Movimento Voluntario,
+175,175,Rebitadeira- Ferrame,M
+183,183,"Rebocador Mecanico,",M
+81,81,"Reostato, Dispositiv",M
+336,336,"Reostato, Dispositivo de Partida e Aparelho D",M
+61,61,Revestimento Ceramic,M
+364,364,"Revestimento Ceramico (Azulejo, Mosaico, Etc.",M
+6,6,Rua e Estrada - Supe,M
+273,273,Rua e Estrada - Superficie Utilizada para Sus,M
+124,124,Ruido,F
+93,93,"Ruido, Exposicao A",F
+58,58,"Ser Vivo, Nic",B
+5,5,Serra - Maquina,M
+67,67,Serra- Ferramenta Po,M
+260,260,Serra- Ferramenta Portatil com Forca Motriz O,M
+133,133,"Serra, Serrote- Ferr",M
+399,399,"Serra, Serrote- Ferramenta Manual sem Forca M",M
+40,40,"Substancia Quimica,",Q
+298,298,"Substancia Quimica, Material, Produto, Nic",Q
+427,427,"Substancia Quimica, Nic",Q
+41,41,"Sucata, Entulho, Res",
+271,271,"Sucata, Entulho, Residuo",
+15,15,Superficie de Susten,M
+441,441,"Superficie de Sustentacao, Nic - Superficie U",M
+28,28,Superficie e Estrutu,M
+323,323,"Superficie e Estrutura, Nic",M
+114,114,Talha - Equip. de Gu,M
+360,360,Talha - Equip. de Guindar,M
+139,139,Talhadeira- Ferramen,M
+414,414,Talhadeira- Ferramenta Portatil com Forca Mot,M
+100,100,"Tambor, Polia, Rolda",M
+343,343,"Tambor, Polia, Roldana - Dispositivo de Trans",M
+57,57,"Tanque, Cilindro (Tr",M
+333,333,"Tanque, Cilindro (Transportaveis e nao Sob Pr",M
+19,19,"Tapete, Forracao de",
+354,354,"Tapete, Forracao de Piso, Capacho - Mobiliari",
+83,83,Telhado,M
+241,241,Temperatura Ambiente,F
+340,340,Temperatura Ambiente- nao Inclui a de Objeto,F
+233,233,Temperatura Muito Al,F
+270,270,"Temperatura Muito Alta, Contato com Objeto Ou",F
+238,238,Temperatura Muito Ba,F
+422,422,"Temperatura Muito Baixa, Contato com Objeto O",F
+90,90,"Tesoura, Guilhotina,",M
+382,382,"Tesoura, Guilhotina, Maquina de Cortar - Maqu",M
+173,173,"Tesoura, Tesourao- F",M
+366,366,"Tesoura, Tesourao- Ferramenta Manual sem Forc",M
+209,209,Texteis - Inclui Fib,
+456,456,Texteis - Inclui Fibras Animais Apos O Primei,
+13,13,Tijolo e Telha - Cer,M
+280,280,Tijolo e Telha - Ceramica,M
+32,32,"Torre, Poste - Edifi",M
+312,312,"Torre, Poste - Edificio ou Estrutura",M
+169,169,"Transformador, Conve",M
+311,311,"Transformador, Conversor - Equip. Eletri",M
+218,218,Transportador com Fo,M
+381,381,Transportador com Forca Motriz,M
+146,146,Transportador por Gr,M
+128,128,"Transportador, Nic",M
+181,181,Trator,M
+2,2,Tubo Sob Pressao (Ma,M
+299,299,Tubo Sob Pressao (Mangueira ou Tubo para Iiqu,M
+30,30,"Tubo, Manilha - Cera",M
+300,300,"Tubo, Manilha - Ceramica",M
+236,236,Tunel,M
+243,243,Turbina,
+64,64,Vaso Sob Pressao (Pa,M
+371,371,"Vaso Sob Pressao (Para Iiquido, Gas ou Vapor)",M
+101,101,"Vegetal - Planta, Ar",
+261,261,"Vegetal - Planta, Arvore, em Estado Natural,",
+188,188,Veiculo Aquatico,M
+37,37,Veiculo de Terraplen,M
+337,337,Veiculo de Terraplenagem,M
+151,151,Veiculo de Tracao An,M
+216,216,Veiculo Deslisante,M
+167,167,Veiculo Funicular (T,M
+418,418,Veiculo Funicular (Tracao por Cabo),M
+0,0,Veiculo Rodoviario M,M
+291,291,Veiculo Rodoviario Motorizado,M
+131,131,Veiculo Sobre Trilho,M
+20,20,"Veiculo, Nic",M
+148,148,"Vestuario, Nic",
+9,9,"Vidraria, Fibra de V",M
+294,294,"Vidraria, Fibra de Vidro, Lamina, Etc., Excet",M
+202,202,,
