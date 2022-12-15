@@ -1,9 +1,19 @@
+"""
+Está classe tem como objetivo fazer o tratamento dos dados de CAT baixados
+
+Será utilizada pela classe Main.ipyjn e prepara_kmodes_df.py
+"""
+
 import pandas as pd
 import glob
 import os
 
 
+"""
+Recebe dois Arrays de datas
 
+Retorna uma lista com a idade em anos entre a emissão da cat e o nascimento.
+"""
 def calcula_idade(nascimento, emissao_cat):
     idades = []
     for i in range(len(nascimento)):
@@ -12,6 +22,14 @@ def calcula_idade(nascimento, emissao_cat):
         idades.append(idade)
     return idades
 
+"""
+Recebe a lista de arquivos CAT, e duas listas de colunas.
+
+Alguns arquivos CAT possuem colunas com nomes diferentes a partir de um certo período
+Essa função tem por objetivo abrir cada arquivo CSV, unificar as colunas para terem os mesmos
+nomes e por fim concatenar todos os arquivos CSV em um único Data Frame que será o retorno da
+função
+"""
 def unifica_dados(lista, colunas, colunas_utilizadas):
     allFiles = pd.DataFrame(columns=colunas_utilizadas)
     for i in range(len(lista)):
@@ -28,12 +46,23 @@ def unifica_dados(lista, colunas, colunas_utilizadas):
         allFiles = pd.concat([allFiles, file])   
     return allFiles
 
+"""
+Recebe um DataFrame e uma lista de CNAES que serão considerados.
+
+Filtragem do DataFrame enviado para retonar apenas registros com valores de CNAES presentes
+na lista enviada
+"""
 def aplica_cnae(df, cnaes):
     df["CNAE2.0 Empregador"] = pd.to_numeric(df['CNAE2.0 Empregador'])
     df = df.loc[df["CNAE2.0 Empregador"].isin(cnaes),:]
     return df
 
-
+"""
+Abaixo teremos as listas pré-definidas: 
+    - De acordo com os arquivos CSV 
+    - CNAES a serem considerados
+    - Colunas selecionadas em uma filtragem
+"""
 colunas_utilizadas = ['Agente  Causador  Acidente', 'Data Acidente', 'CBO', 'CBO.1', 'CID-10',
        'CID-10.1', 'CNAE2.0 Empregador', 'CNAE2.0 Empregador.1',
        'Emitente CAT', 'Espécie do benefício', 'Filiação Segurado',
@@ -66,6 +95,14 @@ cnaes = [41,412,4120,42,421,4211,4212,4213,422,4222,429,4299,43,431,
           4311,4312,4313,4319,432,4321,4322,4329,433,4330,439,4391,4399]
 
 
+"""
+Recebe DataFrame e colunas que serão usadas para filtrar.
+
+- Filtragem de datas inválidas, formatação para tipo data, retorno de dia de semana
+- Exclusão de valores nulos
+- Aplica função >>>"calcula_idade"<<<
+- Filtragem por idade válida entre 18 e 65 anos
+"""
 def filtros(df, colunas):
     df = df.loc[df['Data Nascimento'] != '00/00/0000', :]
     df = df.loc[df['Data Acidente.1'] != '00/00/0000', :]
@@ -85,6 +122,15 @@ def filtros(df, colunas):
     
     return df
 
+"""
+Recebe DataFrame para corrigir campos.
+
+Alguns campos possuem erros de formatação, exemplo:
+    - Espaço vazio antes e depois do nome, ex: "  não " deve virar "não"
+    - Erros de enconding 
+    - Campos nulos com padronizações diferentes
+    - Mapeamento do nome do município para respectivo código
+"""
 def tratar_campos(df):
     df.reset_index(drop=True, inplace=True)
     for coluna in df.columns:
@@ -220,6 +266,21 @@ def corrige_municipios(valor):
 import numpy as np
 
 
+"""
+Código principal do módulo
+
+- Primeiro acessa o caminho local, criando uma string com o path para os arquivos da CAT
+- Cria lista de nome de arquivos para todos os CSV.
+- Retorna o Dataframe com todos os dados de CSV unificados
+- Aplica filtro de linhas apenas com CNAES escolhidos
+- Aplica filtragem baseadas em:
+	- Filtragem de datas inválidas, formatação para tipo data, retorno de dia de semana
+	- Exclusão de valores nulos
+	- Aplica função `calcula_idade()`
+	- Filtragem por idade válida entre **18** e **65** anos
+- Tratamento de campos: corrigindo enconding, usando o `strip()` para apagar espaços vazios, entre outros
+- Tratamento de campos não definidos que são considerados nulos
+"""
 def executa_df():
     
     path = os.getcwd() + '\\Data\\*.csv'
