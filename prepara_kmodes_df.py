@@ -2,6 +2,14 @@ import tratamento_dados as td
 import pandas as pd
 import warnings
 
+"""
+Classe usada para preparar o DataFrame para uso do Kmodes
+
+- Primeiro utiliza a função `executa_df()` do módulo `tratamento_dados.py`
+- Em seguida faz a transformação para os novos dados de CBO, CID-10 e Natureza da Lesão
+- A transformação visa diminuir as variedades de valores para esses atributos
+- Criação de faixas de idade
+"""
 def exec():
     
     df = td.executa_df()
@@ -54,7 +62,7 @@ def exec():
     # Valores inconsistentes
     df.drop('Data Despacho Benefício', axis=1, inplace=True)
     
-    # Excluindo qualquer linah que contenha valor nulo
+    # Excluindo qualquer linha que contenha valor nulo
     df.dropna(axis=0, how='any', inplace=True)
     
     return df

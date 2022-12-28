@@ -90,6 +90,13 @@ colunas_selecionadas = ['Agente  Causador  Acidente', 'CBO', 'CBO.1', 'CID-10',
        'Origem de Cadastramento CAT', 'Parte Corpo Atingida', 'Sexo',
        'Tipo do Acidente', 'UF  Munic.  Acidente', 'UF Munic. Empregador', 'Data Despacho Benefício', 'Data Acidente.1', 'Idade']
 
+colunas_selecionadas_sem_idade = ['Agente  Causador  Acidente', 'CBO', 'CBO.1', 'CID-10',
+       'CID-10.1', 'CNAE2.0 Empregador', 'CNAE2.0 Empregador.1',
+       'Emitente CAT', 'Espécie do benefício', 'Filiação Segurado',
+       'Indica acidente', 'Munic Empr', 'Natureza da Lesão',
+       'Origem de Cadastramento CAT', 'Parte Corpo Atingida', 'Sexo',
+       'Tipo do Acidente', 'UF  Munic.  Acidente', 'UF Munic. Empregador', 'Data Despacho Benefício', 'Data Acidente.1']
+
    
 cnaes = [41,412,4120,42,421,4211,4212,4213,422,4222,429,4299,43,431,
           4311,4312,4313,4319,432,4321,4322,4329,433,4330,439,4391,4399]
@@ -103,24 +110,31 @@ Recebe DataFrame e colunas que serão usadas para filtrar.
 - Aplica função >>>"calcula_idade"<<<
 - Filtragem por idade válida entre 18 e 65 anos
 """
-def filtros(df, colunas):
+def filtros(df, colunas, transforma_datas = True, aplica_day_of_week = True):
     df = df.loc[df['Data Nascimento'] != '00/00/0000', :]
     df = df.loc[df['Data Acidente.1'] != '00/00/0000', :]
-    df['Data Emissão CAT'] = pd.to_datetime(df['Data Emissão CAT'], format='%d/%m/%Y')   
-    df['Data Nascimento'] = pd.to_datetime(df['Data Nascimento'], format='%d/%m/%Y')  
-    df['Data Acidente.1'] = pd.to_datetime(df['Data Acidente.1'], format='%d/%m/%Y')
     
+    if transforma_datas:
+        df['Data Emissão CAT'] = pd.to_datetime(df['Data Emissão CAT'], format='%d/%m/%Y')   
+        df['Data Nascimento'] = pd.to_datetime(df['Data Nascimento'], format='%d/%m/%Y')  
+        df['Data Acidente.1'] = pd.to_datetime(df['Data Acidente.1'], format='%d/%m/%Y')
     
-    df['Data Acidente.1'] = df['Data Acidente.1'].dt.dayofweek
+    if aplica_day_of_week:
+        df['Data Acidente.1'] = df['Data Acidente.1'].dt.dayofweek
     df.dropna(axis=0, how='any', inplace=True)
-    df['Idade'] = calcula_idade(df['Data Nascimento'].values, df['Data Emissão CAT'].values)
+    
+    if transforma_datas:    
+        df['Idade'] = calcula_idade(df['Data Nascimento'].values, df['Data Emissão CAT'].values)
+        df = df.loc[((df['Idade'] >= 18) & (df['Idade'] <= 65)), :]
     
     
 
     df = df[colunas]
-    df = df.loc[((df['Idade'] >= 18) & (df['Idade'] <= 65)), :]
+    
     
     return df
+
+
 
 """
 Recebe DataFrame para corrigir campos.
@@ -164,7 +178,28 @@ def tratar_campos(df):
 
 municipios = {'Rondônia':11,'Acre':12,'Amazonas':13,'Roraima':14,'Pará':15,'Amapá':16,'Tocantins':17,'Maranhão':21,'Piauí':22,'Ceará':23,'Rio Grande do Norte':24,'Paraíba':25,'Pernambuco':26,'Alagoas':27,'Sergipe':28,'Bahia':29,'Minas Gerais':31,'Espírito Santo':32,'Rio de Janeiro':33,'São Paulo':35,'Paraná':41,'Santa Catarina':42,'Rio Grande do Sul':43,'Mato Grosso do Sul':50,'Mato Grosso':51,'Goiás':52,'Distrito Federal':53}
 
+def tratar_campos_sem_alterar_municipio(df):
+    df.reset_index(drop=True, inplace=True)
+    for coluna in df.columns:
+        try:
+            df[coluna] = df[coluna].apply(lambda x: x.strip())
+        except: 
+            continue
+    
+    df["Emitente CAT"] = df["Emitente CAT"].apply(corrige_cat)
+    df["Espécie do benefício"] = df["Espécie do benefício"].apply(corrige_beneficio)
 
+    df["Filiação Segurado"] =  df["Filiação Segurado"].apply(corrige_filiacao)
+
+    df["Indica acidente"] =  df["Indica acidente"].apply(corrige_acidente)
+    df["Sexo"] =  df["Sexo"].apply(corrige_sexo)
+    df["Tipo do Acidente"] =  df["Tipo do Acidente"].apply(corrige_tipo)
+     
+    df['UF Munic. Empregador'] = df['UF Munic. Empregador'].apply(corrige_municipios)
+    df['UF  Munic.  Acidente'] =  df['UF  Munic.  Acidente'].apply(corrige_municipios)
+    
+   
+    return df
 
 def tratar_campos_naoDefinidos(df):
     import re
@@ -265,6 +300,25 @@ def corrige_municipios(valor):
 
 import numpy as np
 
+"""
+Corrige valores do atributo "Data Despacho Benefício"
+"""
+def corrige_despacho_beneficio(df):
+    for i in range(len(df['Data Despacho Benefício'].values)):
+        if(df.loc[i, 'Data Despacho Benefício'] == '0' or df.loc[i, 'Data Despacho Benefício'] == 0):
+            df.loc[i, 'Data Despacho Benefício'] = None
+        elif(df.loc[i, 'Data Despacho Benefício'] == '0000/00'):
+            df.loc[i, 'Data Despacho Benefício'] = None
+        elif(df.loc[i, 'Data Despacho Benefício'] == 201808):
+            df.loc[i, 'Data Despacho Benefício'] = '2018/08'
+        elif(df.loc[i, 'Data Despacho Benefício'] == 201809):
+            df.loc[i, 'Data Despacho Benefício'] = '2018/09'
+        elif(df.loc[i, 'Data Despacho Benefício'] == 201807):
+            df.loc[i, 'Data Despacho Benefício'] = '2018/07'
+        elif(df.loc[i, 'Data Despacho Benefício'] == 201810):
+            df.loc[i, 'Data Despacho Benefício'] = '2018/10'
+    
+    return df
 
 """
 Código principal do módulo
@@ -294,4 +348,27 @@ def executa_df():
     df = tratar_campos(df)
     df = tratar_campos_naoDefinidos(df)
     return df
+
+"""
+Variação do código `executa_df()`, nesse caso passamos dois parâmetros como falso na função `filtros()`
+- Esses parâmetros como falso evita que as colunas de datas seja tratada como tipo datetime, 
+além de não calcular a idade baseado no nascimento e na emissão da CAT
+- Temos um método a mais de correção da data de despacho
+"""
+def executa_df_simplificado():
+    
+    path = os.getcwd() + '\\Data\\*.csv'
+
+    lista_arquivos = glob.glob(path)
+    df = unifica_dados(lista_arquivos, colunas_arquivos_maisAtuais, colunas_utilizadas)
+
+
+    df = aplica_cnae(df, cnaes)
+    df = filtros(df, colunas_selecionadas_sem_idade, False, False)
+    df = tratar_campos_sem_alterar_municipio(df)
+    df = tratar_campos_naoDefinidos(df)
+    df = corrige_despacho_beneficio(df)
+
+    return df
+
 
